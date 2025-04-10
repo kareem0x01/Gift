@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="happy birtday.css" />
+    <title>Happy Birthday</title>
+    <style>
+      /* Ensure the canvas takes up the full screen */
+      body, html {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      canvas {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Canvas for the fireworks and animations -->
+    <canvas id="c"></canvas>
+    <audio id="background-audio" autoplay loop>
+      <source src="song.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <button onclick="playAudio()">Play Music</button>
+
+    <script>
+      function playAudio() {
+        let audio = document.getElementById("background-audio");
+        audio.play();
+      }
+    </script>
+    <!-- Include the JavaScript file -->
+    <script src="happy birtday.js"></script>
+  </body>
+</html>
